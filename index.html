@@ -14,7 +14,7 @@
             <input type="text" placeholder="Enter your city" spellcheck="false">
             <!-- true	The element is to have its spelling and grammar checked -->
             <!-- false	The element is not to be checked -->
-            <button><img src="images/search.png"></button>
+            <button><img src="search.png"></button>
         </div>
         <div class="error">
             <p>Invalid city name</p>
@@ -68,20 +68,20 @@
                     document.querySelector(".wind").innerHTML = data.wind.speed + "km/hr";
 
                     if (data.weather[0].main == "Clouds") {
-                        weatherIcon.src = "images/clouds.png";
+                        weatherIcon.src = "clouds.png";
                         document.querySelector("body").style.backgroundImage = "url('cloudy-background.jpeg')";
                         document.querySelector("body").style.backgroundRepeat = "no-repeat";
                         document.querySelector("body").style.backgroundAttachment = "fixed";
                         document.querySelector("body").style.backgroundSize = "Cover";
                     } else if (data.weather[0].main == "Clear") {
-                        weatherIcon.src = "images/clear.png";
+                        weatherIcon.src = "clear.png";
                         document.querySelector("body").style.backgroundImage = "url('images/background.jpeg')";
                         document.querySelector("body").style.backgroundRepeat = "no-repeat";
                         document.querySelector("body").style.backgroundAttachment = "fixed";
                         document.querySelector("body").style.backgroundSize = "Cover";
                         // document.querySelector(".card").style.backgroundImage = "url('images/clear-background.jpg')";
                     } else if (data.weather[0].main == "Rain") {
-                        weatherIcon.src = "images/rain.png";
+                        weatherIcon.src = "rain.png";
                         document.querySelector("body").style.backgroundImage = "url('rainy-background.jpeg')";
                         document.querySelector("body").style.backgroundRepeat = "no-repeat";
                         document.querySelector("body").style.backgroundAttachment = "fixed";
@@ -89,14 +89,14 @@
                         // document.body.style.background = "linear-gradient(to right, #cfd9df, #e2ebf0)";
 
                     } else if (data.weather[0].main == "Drizzle") {
-                        weatherIcon.src = "images/drizzle.png";
+                        weatherIcon.src = "drizzle.png";
                         document.querySelector("body").style.backgroundImage = "url('rainy-background.jpeg')";
                         document.querySelector("body").style.backgroundRepeat = "no-repeat";
                         document.querySelector("body").style.backgroundAttachment = "fixed";
                         document.querySelector("body").style.backgroundSize = "Cover";
                         // document.querySelector(".card").style.backgroundImage = "url('images/drizzle-background.jpg')";
                     } else if (data.weather[0].main == "Mist") {
-                        weatherIcon.src = "images/mist.png";
+                        weatherIcon.src = "mist.png";
                         
                         // document.querySelector(".card").style.backgroundImage = "url('images/mist-background.jpg')";
                     }
