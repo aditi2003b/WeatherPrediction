@@ -20,19 +20,19 @@
             <p>Invalid city name</p>
         </div>
         <div class="weather">
-            <img src="images/clouds.png" class="weather-icon">
+            <img src="clouds.png" class="weather-icon">
             <h1 class="temp">22°C</h1>
             <h2 class="city">New York</h2>
             <div class="details">
                 <div class="col">
-                    <img src="images/humidity.png" alt="Humidity">
+                    <img src="humidity.png" alt="Humidity">
                     <div class="text-container">
                         <p class="humidity">50%</p>
                         <p>Humidity</p>
                     </div>
                 </div>
                 <div class="col">
-                    <img src="images/wind.png" alt="Wind">
+                    <img src="wind.png" alt="Wind">
                     <div class="text-container">
                         <p class="wind">15 km/hr</p>
                         <p>Wind</p>
@@ -69,20 +69,20 @@
 
                     if (data.weather[0].main == "Clouds") {
                         weatherIcon.src = "images/clouds.png";
-                        document.querySelector("body").style.backgroundImage = "url('images/cloudy-background.jpeg')";
+                        document.querySelector("body").style.backgroundImage = "url('cloudy-background.jpeg')";
                         document.querySelector("body").style.backgroundRepeat = "no-repeat";
                         document.querySelector("body").style.backgroundAttachment = "fixed";
                         document.querySelector("body").style.backgroundSize = "Cover";
                     } else if (data.weather[0].main == "Clear") {
                         weatherIcon.src = "images/clear.png";
-                        document.querySelector("body").style.backgroundImage = "url('images/cloudy-background.jpeg')";
+                        document.querySelector("body").style.backgroundImage = "url('images/background.jpeg')";
                         document.querySelector("body").style.backgroundRepeat = "no-repeat";
                         document.querySelector("body").style.backgroundAttachment = "fixed";
                         document.querySelector("body").style.backgroundSize = "Cover";
                         // document.querySelector(".card").style.backgroundImage = "url('images/clear-background.jpg')";
                     } else if (data.weather[0].main == "Rain") {
                         weatherIcon.src = "images/rain.png";
-                        document.querySelector("body").style.backgroundImage = "url('images/rainy-background.jpeg')";
+                        document.querySelector("body").style.backgroundImage = "url('rainy-background.jpeg')";
                         document.querySelector("body").style.backgroundRepeat = "no-repeat";
                         document.querySelector("body").style.backgroundAttachment = "fixed";
                         document.querySelector("body").style.backgroundSize = "Cover";
@@ -90,7 +90,7 @@
 
                     } else if (data.weather[0].main == "Drizzle") {
                         weatherIcon.src = "images/drizzle.png";
-                        document.querySelector("body").style.backgroundImage = "url('images/rainy-background.jpeg')";
+                        document.querySelector("body").style.backgroundImage = "url('rainy-background.jpeg')";
                         document.querySelector("body").style.backgroundRepeat = "no-repeat";
                         document.querySelector("body").style.backgroundAttachment = "fixed";
                         document.querySelector("body").style.backgroundSize = "Cover";
